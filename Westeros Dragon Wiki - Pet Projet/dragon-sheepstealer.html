@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>House Targaryen</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Music + audio -->
+  <button id="play-music">🔊 Play Music</button>
+  <audio id="background-music" loop>
+    <source src="audio/background.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="container">
+
+    <!-- Left panel -->
+    <div class="left-panel overlay">
+      <h2>
+        Welcome to Westeros Dragons Wiki
+      </h2>
+
+      <div class="section">
+        <img src="images/house.png" class="icon" alt="House Sigil" />
+        <div>
+          <p>Learn about Dragons based on Houses they belong to...</p>
+          <form name="houseForm">
+            <div class="dropdown">
+              <select name="houseSelect" id="houseSelect">
+                <option value="">Select House</option>
+                <option value="targaryen">Targaryen</option>
+                <option value="velaryon">Velaryon</option>
+              </select>
+              <button type="submit">✔️</button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+
+      <p class="or">OR</p>
+
+      <div class="section">
+        <img src="images/dragon.png" class="icon" alt="Dragon Icon" />
+        <div>
+          <p>Learn about a specific Dragon...</p>
+          <form name="dragonForm">
+            <div class="dropdown">
+              <select name="dragonSelect" id="dragonSelect">
+                <option value="">Select Dragon</option>
+                <option value="balerion">Balerion</option>
+                <option value="vhagar">Vhagar</option>
+                <option value="vermithor">Vermithor</option>
+              </select>
+              <button type="submit">✔️</button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+
+      <footer>© Westeros Dragons Wiki</footer>
+    </div>
+
+    <!-- Right panel (Content) -->
+<div class="right-panel scrollable">
+
+    <div class="page-banner">
+      <img src="images/HouseSelected/Targaryen/sheepstealer.png" alt="Dragon-Sheep-Stealer-Banner" />
+    </div>
+  
+    <div id="form-area">
+  
+      <h3>Curious about Sheepstealer?</h3>
+
+      <p>
+        We're still gathering information on this dragon.<br>
+        Share your interest below, and you'll be the first to know when new details are live!
+      </p>
+  
+      <form name="interestForm" class="interest-form">
+  
+        <label for="name">Full Name:</label>
+        <input type="text" name="fullName" id="name" placeholder="John Doe" required />
+  
+        <label for="email">Email:</label>
+        <input type="email" name="userEmail" id="email" placeholder="John_doe@gmail.com" required/>
+  
+        <button type="submit">Submit Interest</button>
+  
+      </form>
+      </div>
+
+      <div id="interest_thanks" style="display: none;">
+        <h2>Thank you <span id="thankUserName"></span> for your interest!</h2>
+        <p>We'll notify you as soon as we have more to share.</p>
+      </div>
+      
+    </div>
+  
+    </div> 
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+

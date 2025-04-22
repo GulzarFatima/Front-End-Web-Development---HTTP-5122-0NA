@@ -1,0 +1,284 @@
+/* Base Reset and Background */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, serif;
+  background: url('../images/bg.png') no-repeat center center / cover;
+  color: white;
+}
+
+/* Music Button */
+#play-music {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#play-music:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Layout */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Panel */
+.left-panel.overlay {
+  width: 500px;
+  padding: 32px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Right Panel */
+.right-panel {
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: black;
+}
+
+/* Titles */
+.left-panel h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
+
+.line-1,
+.line-2 {
+  display: block;
+}
+
+/* left panel - Sections with Icons */
+.section {
+  display: flex;
+  align-items: center;
+  margin: 32px 0;
+  max-width: 300px;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 16px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Dropdowns */
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+select {
+  padding: 8px 32px 8px 8px;
+  font-size: 16px;
+  border: none;
+  background: #ffffff4d;
+  border: white 1px solid;
+  color: #ffffff;
+}
+select:hover {
+  background-color: #ffecd0;
+  color: rgb(0, 0, 0);
+}
+
+/* Buttons */
+button {
+  padding: 8px 16px;
+  font-weight: bold;
+  font-size: 14px;
+  background: #ffffff4d;
+  color: #ffffff;
+  border: white 1px solid;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffecd0;
+  color: black;
+}
+
+/* OR label */
+.or {
+  margin: 16px 0;
+  padding-left: 80px;
+  font-style: italic;
+  text-align: left;
+}
+
+/* Footer */
+footer {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: auto;
+}
+
+/* Landing Page Background */
+body.landing {
+  overflow: hidden;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.landing-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.landing-content h1 {
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.enter-btn {
+  display: inline-block;
+  font-size: 48px;
+  margin-top: 32px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.enter-btn:hover {
+  transform: scale(1.2);
+}
+
+
+/* Banner at top of right panel */
+.page-banner img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  border-radius: 0;
+}
+
+/* Content under banner */
+.page-content {
+  padding: 42px;
+
+}
+
+.dragon-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.dragon-card a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.dragon-card img {
+  width: 100%;
+  margin-bottom: 8px;
+  height: 350px; 
+  object-fit: cover;
+}
+
+.dragon-card p {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+
+.dragon-card a:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+.dragon-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin-top: 42px;
+
+}
+
+.page-content .paragraph {
+  font-family:sans-serif ;
+  font-weight: 100;
+  line-height: 24px;
+  color: #CFCFCF;
+  font-size: 16px;
+}
+
+.page-content h3 {
+  font-family: georgia, serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #afafaf;
+  letter-spacing: 2px;
+}
+
+.fan-art {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+/* Interest Form */
+
+#form-area {
+  margin: 32px;
+}
+.interest-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+  max-width: 400px;
+  outline: 1px solid #ccc;
+  padding: 32px;
+}
+
+.interest-form input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+#interest_thanks {
+  display: none;
+  outline: 1px solid #ccc;
+  padding: 32px;
+  margin-left: 32px;
+  max-width: fit-content;
+}

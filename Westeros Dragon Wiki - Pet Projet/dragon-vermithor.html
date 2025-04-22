@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Balerion - The Black Dread</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Music + audio -->
+  <button id="play-music">🔊 Play Music</button>
+  <audio id="background-music" loop>
+    <source src="audio/background.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="container">
+
+    <!-- Left panel (Do not edit)--> 
+    <div class="left-panel overlay">
+      <h2>
+        Welcome to Westeros Dragons Wiki
+      </h2>
+
+      <div class="section">
+        <img src="images/house.png" class="icon" alt="House Sigil" />
+        <div>
+          <p>Learn about Dragons based on Houses they belong to...</p>
+          <form name="houseForm">
+            <div class="dropdown">
+              <select name="houseSelect" id="houseSelect">
+                <option value="">Select House</option>
+                <option value="targaryen">Targaryen</option>
+                <option value="velaryon">Velaryon</option>
+              </select>
+              <button type="submit">✔️</button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+
+      <p class="or">OR</p>
+
+      <div class="section">
+        <img src="images/dragon.png" class="icon" alt="Dragon Icon" />
+        <div>
+          <p>Learn about a specific Dragon...</p>
+          <form name="dragonForm">
+            <div class="dropdown">
+              <select name="dragonSelect" id="dragonSelect">
+                <option value="">Select Dragon</option>
+                <option value="balerion">Balerion</option>
+                <option value="vhagar">Vhagar</option>
+                <option value="vermithor">Vermithor</option>
+              </select>
+              <button type="submit">✔️</button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+
+      <footer>© Westeros Dragons Wiki - A HOTD Fan Project</footer>
+    </div>
+
+      <!-- Right panel (Content) -->
+    <div class="right-panel scrollable">
+      <div class="page-banner">
+        <img src="images/DragonSelected/Vermithor/generated/2.png" alt="Vermithor Banner" />
+      </div>
+    
+      <div class="page-content">
+
+        <h3>Dragon</h3>
+        <h1>Vermithor - The Bronze Fury</h1>
+
+          <img class = "dragon-image" src="images/DragonSelected/Vermithor/generated/1.png" alt="Vermithor">
+
+        <div class="paragraph">
+          <p>Vermithor was a bronze dragon with "great tan wings".[3] His flames were possibly red or golden.[4][N 1] Vermithor was already a large dragon in 48 AC;[5] only Balerion and Vhagar were larger.[6] By the time of the Dance of the Dragons, Vermithor was almost a hundred years old.[1]
+            Vermithor was a fearsome beast.[3] Accustomed to men and having had a previous rider, by the reign of Aegon II Targaryen Vermithor was tolerant of the presence of people and more accepting of new riders.[3] Vermithor often coiled with Silverwing.[1]
+          </p>            
+        </div>
+
+        <h3>Fan Art</h3>
+        <div class="fan-art">
+          <img src="images/DragonSelected/Vermithor/2.png" alt="Fan Art of Vermithor" />
+          <img src="images/DragonSelected/Balerion/3.png" alt="Fan Art of Vermithor" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+

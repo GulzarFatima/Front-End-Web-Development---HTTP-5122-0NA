@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Balerion - The Black Dread</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Music + audio -->
+  <button id="play-music">🔊 Play Music</button>
+  <audio id="background-music" loop>
+    <source src="audio/background.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="container">
+
+    <!-- Left panel -->
+    <div class="left-panel overlay">
+      <h2>
+        Welcome to Westeros Dragons Wiki
+      </h2>
+
+      <div class="section">
+        <img src="images/house.png" class="icon" alt="House Sigil" />
+        <div>
+          <p>Learn about Dragons based on Houses they belong to...</p>
+          <form name="houseForm">
+            <div class="dropdown">
+              <select name="houseSelect" id="houseSelect">
+                <option value="">Select House</option>
+                <option value="targaryen">Targaryen</option>
+                <option value="velaryon">Velaryon</option>
+              </select>
+              <button type="submit">✔️</button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+
+      <p class="or">OR</p>
+
+      <div class="section">
+        <img src="images/dragon.png" class="icon" alt="Dragon Icon" />
+        <div>
+          <p>Learn about a specific Dragon...</p>
+          <form name="dragonForm">
+            <div class="dropdown">
+              <select name="dragonSelect" id="dragonSelect">
+                <option value="">Select Dragon</option>
+                <option value="balerion">Balerion</option>
+                <option value="vhagar">Vhagar</option>
+                <option value="vermithor">Vermithor</option>
+              </select>
+              <button type="submit">✔️</button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+
+      <footer>© Westeros Dragons Wiki - A HOTD Fan Project</footer>
+    </div>
+
+    <!-- Right panel with house-specific content -->
+    <div class="right-panel scrollable">
+      <div class="page-banner">
+        <img src="images/DragonSelected/Balerion/generated/1.png" alt="Balerion Banner" />
+      </div>
+    
+      <div class="page-content">
+
+        <h3>Dragon</h3>
+        <h1>Balerion - The Black Dread</h1>
+
+          <img class = "dragon-image" src="images/DragonSelected/Balerion/generated/2.png" alt="Balerion">
+
+        <div class="paragraph">
+          <p>Balerion, called the Black Dread, was a dragon of House Targaryen.He was ridden by King Aegon I Targaryen during the Conquest, alongside his sister Queen Visenya's Vhagar, and his sister Queen Rhaenys's Meraxes.Other known riders of Balerion were King Maegor I Targaryen,Princess Aerea Targaryen and Prince Viserys Targaryen.
+            Balerion died of old age in 94AC during the reign of King Jaehaerys I Targaryen, more than two hundred years old.</p>
+          </p>
+        </div>
+
+        <h3>Fan Art</h3>
+        <div class="fan-art">
+          <img src="images/DragonSelected/Balerion/2.png" alt="Fan Art of Balerion" />
+          <img src="images/DragonSelected/Balerion/3.png" alt="Fan Art of Balerion" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+

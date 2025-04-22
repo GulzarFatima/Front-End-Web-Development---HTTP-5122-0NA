@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Balerion - The Black Dread</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Music + audio -->
+  <button id="play-music">🔊 Play Music</button>
+  <audio id="background-music" loop>
+    <source src="audio/background.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="container">
+
+    <!-- Left panel (Do not edit)--> 
+    <div class="left-panel overlay">
+      <h2>
+        Welcome to Westeros Dragons Wiki
+      </h2>
+
+      <div class="section">
+        <img src="images/house.png" class="icon" alt="House Sigil" />
+        <div>
+          <p>Learn about Dragons based on Houses they belong to...</p>
+          <form name="houseForm">
+            <div class="dropdown">
+              <select name="houseSelect" id="houseSelect">
+                <option value="">Select House</option>
+                <option value="targaryen">Targaryen</option>
+                <option value="velaryon">Velaryon</option>
+              </select>
+              <button type="submit">✔️</button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+
+      <p class="or">OR</p>
+
+      <div class="section">
+        <img src="images/dragon.png" class="icon" alt="Dragon Icon" />
+        <div>
+          <p>Learn about a specific Dragon...</p>
+          <form name="dragonForm">
+            <div class="dropdown">
+              <select name="dragonSelect" id="dragonSelect">
+                <option value="">Select Dragon</option>
+                <option value="balerion">Balerion</option>
+                <option value="vhagar">Vhagar</option>
+                <option value="vermithor">Vermithor</option>
+              </select>
+              <button type="submit">✔️</button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+
+      <footer>© Westeros Dragons Wiki - A HOTD Fan Project</footer>
+    </div>
+
+    <!-- Right panel (Content) -->
+    <div class="right-panel scrollable">
+      <div class="page-banner">
+        <img src="images/DragonSelected/Vhagar/generated/2.png" alt="Vhagar Banner" />
+      </div>
+    
+      <div class="page-content">
+
+        <h3>Dragon</h3>
+        <h1>Vhagar</h1>
+
+          <img class = "dragon-image" src="images/DragonSelected/Vhagar/generated/1.png" alt="Vhagar">
+
+        <div class="paragraph">
+          <p>The color of Vhagar's scales, horns, wings, wing bones, and spinal crest, as well as the color of her flame are not mentioned in the books. However, the artist commissioned for the 2021 A Song of Ice and Fire Calendar, Sam Hogg, asked for clarification from George R. R. Martin's team and was told Vhagar was "bronze with greenish blue highlights and bright green eyes".
+            According to Tyrion Lannister, Vhagar was large enough that one could ride a horse down her gullet.It is said that Vhagar's breath was so hot that it could melt a knight's armor and cook him inside.
+            By the time of the Dance of the Dragons, Vhagar was the hardened survivor of a hundred battles, had grown almost as large as Balerion, and was the oldest and largest of the dragons in Westeros. Her roar was so powerful that it could shake the very foundations of Storm's End. No living dragon could match her for size or ferocity.
+          </p>          
+        </div>
+
+        <h3>Fan Art</h3>
+
+        <div class="fan-art">
+          <img src="images/DragonSelected/Vhagar/image2.png" alt="Fan Art of Vhagar" />
+          <img src="images/DragonSelected/Vhagar/image3.png" alt="Fan Art of Vhagar" />
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
